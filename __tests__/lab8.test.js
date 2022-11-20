@@ -67,7 +67,7 @@ describe('Basic user flow for Website', () => {
     await button.click();
     const innerText = await button.getProperty('innerText')
     const textValue = await innerText.jsonValue();
-    expect(textValue).toBe('Remove from cart');
+    expect(textValue).toBe('Remove from Cart');
   }, 2500);
 
   // Check to make sure that after clicking "Add to Cart" on every <product-item> that the Cart
